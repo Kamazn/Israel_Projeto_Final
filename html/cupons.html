@@ -27,47 +27,28 @@
 
         <main>
             <section class="titulo-pagina">
-                <h1>Um desconto vai bem.</h1>
-                <p>Clique no botão para descobrir o código do cupom.</p>
+                <h1>Cupons</h1>
+                <p>Abra um cupom e digite o código em Meu pedido.</p>
             </section>
-            <section class="lista-cupons" aria-label="Cupons disponíveis">
-                <article class="cupom">
-                    <p>Para o seu lanche</p>
-                    <h2>10% <span>de desconto</span></h2>
-                    <p>Em pedidos acima de R$ 30,00.</p>
-                    <button class="botao botao-cupom" type="button" aria-controls="cupom-10" aria-expanded="false">Mostrar cupom</button>
-                    <p id="cupom-10" class="codigo-cupom oculto">Código: <strong>CASA10</strong></p>
-                </article>
-                <article class="cupom">
-                    <p>Para juntar a turma</p>
-                    <h2>20% <span>de desconto</span></h2>
-                    <p>Em pedidos acima de R$ 100,00.</p>
-                    <button class="botao botao-cupom" type="button" aria-controls="cupom-20" aria-expanded="false">Mostrar cupom</button>
-                    <p id="cupom-20" class="codigo-cupom oculto">Código: <strong>TURMA20</strong></p>
-                </article>
-                <article class="cupom">
-                    <p>Para dividir com todo mundo</p>
-                    <h2>30% <span>de desconto</span></h2>
-                    <p>Em pedidos acima de R$ 200,00.</p>
-                    <button class="botao botao-cupom" type="button" aria-controls="cupom-30" aria-expanded="false">Mostrar cupom</button>
-                    <p id="cupom-30" class="codigo-cupom oculto">Código: <strong>FESTA30</strong></p>
-                </article>
-            </section>
-            <aside class="aviso">
-                <h2>Sobre os cupons</h2>
-                <p>Ofertas ilustrativas deste projeto. Digite o código na página Meu pedido para simular o desconto.</p>
-            </aside>
-            <section class="duvidas">
-                <h2>Dúvidas rápidas</h2>
-                <details>
-                    <summary>Como vejo o código?</summary>
-                    <p>Clique em “Mostrar cupom”. Clique novamente para esconder.</p>
+
+            <section class="lista-cupons">
+                <details class="cupom">
+                    <summary>10% de desconto</summary>
+                    <p>Pedidos acima de R$ 30,00.</p>
+                    <p>Código: <strong>CASA10</strong></p>
                 </details>
-                <details>
-                    <summary>Posso fazer uma compra pelo site?</summary>
-                    <p>Este site é uma demonstração. Você pode montar uma prévia, mas nenhum pedido é enviado.</p>
+                <details class="cupom">
+                    <summary>20% de desconto</summary>
+                    <p>Pedidos acima de R$ 100,00.</p>
+                    <p>Código: <strong>TURMA20</strong></p>
+                </details>
+                <details class="cupom">
+                    <summary>30% de desconto</summary>
+                    <p>Pedidos acima de R$ 200,00.</p>
+                    <p>Código: <strong>FESTA30</strong></p>
                 </details>
             </section>
+
             <p><a class="botao" href="carrinho.html">Ir para meu pedido</a></p>
         </main>
         <footer class="rodape">
@@ -83,6 +64,5 @@
             </nav>
             <small>João Gabriel G. - Projeto da Faculdade - © 2026</small>
         </footer>
-        <script src="../js/cupons.js"></script>
     </body>
 </html>
