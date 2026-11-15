@@ -7,20 +7,13 @@
 body {
     margin: 0;
     background-color: #0d0e12;
-    background-image: linear-gradient(#ffffff08 1px, transparent 1px),
-        linear-gradient(90deg, #ffffff08 1px, transparent 1px);
-    background-size: 36px 36px;
     color: #f2f2f5;
     font-family: 'Nunito', Arial, sans-serif;
     font-size: 1rem;
     line-height: 1.6;
 }
 
-h1,
-h2,
-h3,
-p,
-figure {
+h1, h2, h3, p, figure {
     margin: 0 0 16px;
 }
 
@@ -46,27 +39,21 @@ a {
     color: #f5c638;
 }
 
-img,
-video {
+img, video {
     display: block;
     max-width: 100%;
     height: auto;
 }
 
-button,
-input,
-select,
-textarea {
+button, input, select, textarea {
     font: inherit;
 }
 
-button,
-summary {
+button, summary {
     cursor: pointer;
 }
 
-.header,
-main {
+.header, main {
     width: 90%;
     max-width: 1180px;
     margin: 0 auto;
@@ -111,8 +98,7 @@ nav a {
     padding: 8px 0;
 }
 
-nav a:hover,
-nav .atual {
+nav a:hover, nav .atual {
     color: #f5c638;
 }
 
@@ -133,8 +119,9 @@ nav .atual {
 }
 
 .botao:hover {
-    background-color: #ffe29a;
-    border-color: #ffe29a;
+    background-color: transparent;
+    color: #f5c638;
+    border-color: #f5c638;
 }
 
 .link-claro {
@@ -187,8 +174,7 @@ details p {
 }
 
 @media (max-width: 768px) {
-    .header,
-    .rodape {
+    .header, .rodape {
         flex-direction: column;
         align-items: center;
         gap: 12px;

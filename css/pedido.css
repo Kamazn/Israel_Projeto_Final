@@ -17,9 +17,7 @@
     margin: 18px 0 6px;
 }
 
-.formulario input,
-.formulario select,
-.formulario textarea {
+.formulario input, .formulario select, .formulario textarea {
     display: block;
     width: 100%;
     padding: 12px;
@@ -50,8 +48,7 @@
 }
 
 @media (max-width: 768px) {
-    .formulario,
-    .resumo {
+    .formulario, .resumo {
         padding: 24px;
     }
 }
@@ -64,27 +61,21 @@ fieldset {
     min-width: 0;
 }
 
-.total,
-#mensagem-pedido {
+.total, #mensagem-pedido {
     color: #f5c638;
 }
 
-.formulario,
-.resumo {
+.formulario, .resumo {
     background-color: #161820;
 }
 
-.formulario input,
-.formulario select,
-.formulario textarea {
+.formulario input, .formulario select, .formulario textarea {
     background-color: #161820;
     max-width: 100%;
     min-width: 0;
 }
 
-.area-pedido,
-.formulario,
-.resumo {
+.area-pedido, .formulario, .resumo {
     min-width: 0;
     max-width: 100%;
 }
