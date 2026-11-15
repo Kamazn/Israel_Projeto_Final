@@ -47,6 +47,21 @@
     color: #f5c638;
 }
 
+.voltar-cardapio {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 8px 14px;
+    color: #f5c638;
+    border: 1px solid #f5c638;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.voltar-cardapio:hover {
+    background-color: #f5c638;
+    color: #171717;
+}
+
 @media (max-width: 768px) {
     .formulario, .resumo {
         padding: 24px;
@@ -84,4 +99,21 @@ fieldset {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
+}
+
+
+#pedido-concluido {
+    width: 90%;
+    max-width: 420px;
+    margin: auto;
+    padding: 28px;
+    background-color: #171717;
+    color: #ffffff;
+    border: 1px solid #484848;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#pedido-concluido::backdrop {
+    background-color: #00000099;
 }

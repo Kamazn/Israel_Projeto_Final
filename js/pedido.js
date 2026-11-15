@@ -7,6 +7,8 @@ const campoNome = document.getElementById('nome');
 const total = document.getElementById('total');
 const mensagemCupom = document.getElementById('mensagem-pedido');
 const confirmacao = document.getElementById('confirmacao-pedido');
+const caixa = document.getElementById('pedido-concluido');
+const resumoConfirmacao = document.getElementById('resumo-confirmacao');
 
 const produtoEscolhido = location.hash.replace('#', '');
 const opcao = document.getElementById(produtoEscolhido);
@@ -29,13 +31,13 @@ function calcularDesconto(subtotal) {
         return 0;
     }
 
-    if (codigo === 'CASA10') {
+    if (codigo === 'UNIPE10') {
         porcentagem = 10;
         minimo = 30;
-    } else if (codigo === 'TURMA20') {
+    } else if (codigo === 'UNIPE20') {
         porcentagem = 20;
         minimo = 100;
-    } else if (codigo === 'FESTA30') {
+    } else if (codigo === 'UNIPE30') {
         porcentagem = 30;
         minimo = 200;
     } else {
@@ -80,9 +82,8 @@ function conferirPedido(evento) {
     }
 
     calcularTotal();
-    const mensagem = nome + ', seu pedido foi concluído na simulação. Total: R$ ' + total.textContent + '.';
-    alert(mensagem);
-    location.href = 'index.html';
+    resumoConfirmacao.textContent = nome + ', seu pedido foi concluído. Total: R$ ' + total.textContent + '.';
+    caixa.showModal();
 }
 
 formulario.addEventListener('change', calcularTotal);
