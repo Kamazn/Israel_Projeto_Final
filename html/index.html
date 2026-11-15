@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="João Gabriel">
+        <meta name="description" content="Início da UnipeBurguer: conheça a casa e seu cardápio.">
+        <title>Início | UnipeBurguer</title>
+        <link rel="stylesheet" href="../css/comum.css">
+        <link rel="stylesheet" href="../css/inicio.css">
+        <link rel="icon" type="image/x-icon" href="../img/icone.png">
+    </head>
+
+    <body class="header-total">
+        <header class="header">
+            <a class="logo" href="index.html">
+                <img src="../img/logo.png" alt="UnipeBurguer" width="52" height="52">
+                UnipeBurguer
+            </a>
+            <nav class="Menu">
+                <a href="index.html" class="atual">Início</a>
+                <a href="cardapio.html">Cardápio</a>
+                <a href="cupons.html">Cupons</a>
+                <a href="carrinho.html">Meu pedido</a>
+            </nav>
+        </header>
+
+        <main class="pagina-inicial">
+            <section class="destaque">
+                <video class="video-fundo" src="../video/preparo.mp4" autoplay muted loop></video>
+
+                <header class="titulo">
+                    <h1>O sabor que<br><strong>fica na memória.</strong></h1>
+                    <p>Hamburgueres artesanais, pão macio e molho da casa. Escolha seu favorito e monte o lanche do seu jeito.</p>
+                    <a class="botao" href="cardapio.html">Explorar cardápio</a>
+                    <a class="cupom" href="cupons.html">Ver ofertas</a>
+                </header>
+
+                <figure class="hamburguer-destaque">
+                        <img src="../img/hamburguer_inicial.png" alt="Hambúrguer-inicial">
+                </figure>
+            </section>
+
+            <section class="como-pedir" id="como-pedir" aria-labelledby="titulo-pedido">
+                <header>
+                    <h2 id="titulo-pedido">Como fazer seu pedido?</h2>
+                    <ol>
+                        <li>Clique no hambúrguer para selecionar o lanche.</li>
+                        <li>Escolha os acompanhamentos no carrinho.</li>
+                        <li>Digite um cupom, se tiver, e confira o total.</li>
+                    </ol>
+                    <a class="botao" href="cardapio.html">Ver o cardápio</a>
+                </header>
+
+                <article class="previa-pedido">
+                    <h3>Exemplo do pedido</h3>
+                    <p>Hamburguer <strong>R$ 26,00</strong></p>
+                    <p>Batata frita <strong>R$ 12,00</strong></p>
+                    <p>Cupom CASA10 <strong>− R$ 3,80</strong></p>
+                    <p class="valor-previa">Total <strong><del>R$ 38,00</del> <ins>R$ 34,20</ins></strong></p>
+                    <p>Etapa do exemplo: 3 de 3</p>
+                    <progress value="3" max="3">3 de 3</progress>
+                </article>
+
+            </section>
+
+            <section class="sobre-nos">
+                <header>
+                    <p class="sobre">Sobre nós</p>
+                    <h2 id="titulo-sobre">Da brasa<br>para o seu lanche.</h2>
+                </header>
+
+                <article>
+                    <p>A UnipeBurguer serve <mark>dois hambúrgueres e três combos</mark>, com opções de carne e frango. Você escolhe a batata, a bebida e o que mais quiser para acompanhar.</p>
+                    <ul>
+                        <li>Hambúrgueres de carne e de frango</li>
+                        <li>Batatas tradicionais</li>
+                        <li>Bebidas e milk-shake</li>
+                    </ul>
+                    
+                    <details>
+                        <summary>Vídeo da hamburgueria</summary>
+                        <figure>
+                            <video controls muted>
+                                <source src="../video/preparo.mp4" type="video/mp4">
+                            </video>
+                            <figcaption>Vídeo da hamburgueria em <abbr title="MPEG-4 Parte 14">MP4</abbr>.</figcaption>
+                        </figure>
+                    </details>
+                </article>
+            </section>
+
+            <section class="avaliacoes">
+                <header class="titulo-avaliacoes">
+                    <p class="opiniao">Opiniões sobre a UnipeBurguer</p>
+                    <h2 id="titulo-opinioes">Quem prova,<br><strong>recomenda.</strong></h2>
+                    <p>Nota dos depoimentos: 5 de 5</p>
+                    <meter min="0" max="5" value="5">5 de 5</meter>
+                </header>
+                <section class="depoimentos">
+                    <article class="avaliacao">
+                        <p class="estrelas" aria-label="5 de 5 estrelas">★★★★★</p>
+                        <blockquote>“O cheddar é meu favorito. Pão macio, queijo caprichado e a batata acompanha muito bem.”</blockquote>
+                        <p><strong>João</strong><br>Comprou o Combo</p>
+                    </article>
+                    <article class="avaliacao oculto">
+                        <p class="estrelas" aria-label="5 de 5 estrelas">★★★★★</p>
+                        <blockquote>“Gostei da opção de frango. Com refri e batata, ficou uma combinação ótima.”</blockquote>
+                        <p><strong>Eryck</strong><br>Comprou o Combo</p>
+                    </article>
+                    <article class="avaliacao oculto">
+                        <p class="estrelas" aria-label="5 de 5 estrelas">★★★★★</p>
+                        <blockquote>“O duplo já vale a visita. Pedi com batata e dividi o milk-shake.”</blockquote>
+                        <p><strong>Israel</strong><br>Comprou o Combo</p>
+                    </article>
+                    <p class="setas">
+                        <button id="avaliacao-anterior" type="button">← Anterior</button>
+                        <button id="proxima-avaliacao" type="button">Próxima →</button>
+                    </p>
+                </section>
+            </section>
+        </main>
+
+        <footer class="rodape">
+            <a class="marca" href="index.html">UnipeBurguer</a>
+            <nav class="mapa-site" aria-label="Todas as páginas">
+                <a href="index.html">Início</a>
+                <a href="cardapio.html">Cardápio</a>
+                <a href="cupons.html">Cupons</a>
+                <a href="carrinho.html">Meu pedido</a>
+            </nav>
+            <small>
+                <strong>Projeto feito com HTML, CSS e JavaScript</strong><br>
+                Feito por João Gabriel G. - © 2026
+            </small>
+        </footer>
+
+        <script src="../js/avaliacoes.js"></script>
+    </body>
+</html>
