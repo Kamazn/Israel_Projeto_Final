@@ -1,0 +1,250 @@
+.header-total {
+    position: relative;
+}
+
+.header-total .header {
+    position: absolute;
+    top: 24px;
+    left: 0;
+    right: 0;
+    width: 88%;
+    max-width: none;
+    padding: 12px 0;
+    z-index: 2;
+    border-bottom: 0;
+}
+
+.pagina-inicial {
+    width: 100%;
+    max-width: none;
+}
+
+.destaque {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    min-height: 100vh;
+    padding: 140px 6% 55px;
+    overflow: hidden;
+    background-color: #0d0e12;
+}
+
+.video-fundo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.38;
+    pointer-events: none;
+}
+
+.titulo,
+.hamburguer-destaque {
+    position: relative;
+    flex: 1;
+    min-width: 0;
+}
+
+.titulo h1 {
+    font-size: 4.5rem;
+    line-height: 1.1;
+}
+
+.sobre,
+.opiniao,
+.titulo strong,
+.estrelas {
+    color: #f5c638;
+}
+
+.titulo p {
+    max-width: 440px;
+    color: #ffffff;
+}
+
+.titulo .botao {
+    margin: 10px 18px 10px 0;
+}
+
+.titulo .cupom {
+    color: #ffffff;
+}
+
+.hamburguer-destaque {
+    max-width: 470px;
+    margin: 0 auto;
+}
+
+.hamburguer-destaque img {
+    width: 100%;
+}
+
+.avaliacoes {
+    background-color: #15171d;
+    background-image: radial-gradient(#f5c63818 1px, transparent 1px);
+    background-size: 18px 18px;
+}
+
+.como-pedir,
+.sobre-nos,
+.avaliacoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    padding: 72px 6%;
+    border-top: 1px solid #272a34;
+}
+
+.como-pedir > *,
+.sobre-nos > *,
+.avaliacoes > * {
+    flex: 1;
+    min-width: 0;
+    max-width: 566px;
+}
+
+.como-pedir li,
+.sobre-nos li {
+    margin-bottom: 8px;
+}
+
+.como-pedir {
+    background-color: #15171d;
+    background-image: linear-gradient(#ffffff0c 1px, transparent 1px),
+        linear-gradient(90deg, #ffffff0c 1px, transparent 1px);
+    background-size: 40px 40px;
+}
+
+.previa-pedido,
+.avaliacao {
+    padding: 28px;
+    border: 1px solid #323644;
+    border-radius: 14px;
+    background-color: #161820;
+}
+
+.previa-pedido p {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 9px 0;
+    margin-bottom: 0;
+}
+
+.valor-previa {
+    border-top: 1px solid #323644;
+    font-weight: bold;
+}
+
+progress {
+    width: 150px;
+    max-width: 100%;
+    accent-color: #f5c638;
+}
+
+.valor-previa del {
+    color: #bdc0cb;
+    font-weight: normal;
+}
+
+.valor-previa ins {
+    color: #f5c638;
+    text-decoration: none;
+}
+
+.sobre-nos {
+    background-color: #101116;
+    background-image: radial-gradient(#ffffff20 1px, transparent 1px);
+    background-size: 32px 32px;
+}
+
+.sobre-nos figure {
+    max-width: 460px;
+    margin-top: 16px;
+}
+
+mark {
+    background-color: #f5c638;
+    color: #17202c;
+}
+
+.titulo-avaliacoes h2,
+.sobre-nos h2 {
+    font-size: 3rem;
+}
+
+.avaliacao {
+    margin-bottom: 16px;
+}
+
+blockquote {
+    margin: 16px 0 24px;
+    font-size: 1.15rem;
+}
+
+.setas {
+    display: flex;
+    gap: 12px;
+}
+
+.setas button {
+    padding: 8px 14px;
+    border: 1px solid #454958;
+    border-radius: 6px;
+    background-color: #161820;
+    color: #ffffff;
+}
+
+.setas button:hover {
+    background-color: #f5c638;
+    color: #17202c;
+}
+
+meter {
+    width: 150px;
+    max-width: 100%;
+    accent-color: #f5c638;
+}
+
+.header-total .rodape {
+    margin-top: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .hamburguer-destaque img {
+        transition: transform 0.25s ease;
+    }
+
+    .hamburguer-destaque:hover img,
+    .hamburguer-destaque a:focus-visible img {
+        transform: translateY(-8px) rotate(-3deg);
+    }
+
+}
+
+@media (max-width: 768px) {
+    .destaque,
+    .como-pedir,
+    .sobre-nos,
+    .avaliacoes {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 28px;
+    }
+
+    .destaque {
+        padding-top: 190px;
+    }
+
+    .titulo h1 {
+        font-size: 3rem;
+    }
+
+    .hamburguer-destaque {
+        max-width: 320px;
+    }
+}
