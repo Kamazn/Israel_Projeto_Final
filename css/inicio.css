@@ -80,7 +80,7 @@
 .como-pedir, .sobre-nos, .avaliacoes {
     display: flex;
     align-items: center;
-    background-color: #000000;
+    background-color: #101010;
     justify-content: center;
     gap: 48px;
     padding: 72px 6%;
@@ -117,7 +117,7 @@
     font-weight: bold;
 }
 
-progress, .valor-previa del {
+.valor-previa del {
     color: #bdc0cb;
     font-weight: normal;
 }
@@ -133,7 +133,7 @@ progress, .valor-previa del {
 }
 
 .avaliacoes {
-    background-color: #15161a;
+    background-color: #171717;
 }
 
 .sobre-nos p {
@@ -184,7 +184,6 @@ blockquote {
 
 .header-total .rodape {
     margin-top: 0;
-    background-color: #0d0d0d;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -214,5 +213,47 @@ blockquote {
 
     .hamburguer-destaque {
         max-width: 320px;
+    }
+}
+
+
+progress, meter {
+    width: 150px;
+    max-width: 100%;
+    accent-color: #f5c638;
+}
+
+progress::-webkit-progress-value {
+    background-color: #f5c638;
+}
+
+meter::-webkit-meter-optimum-value {
+    background: #f5c638;
+}
+
+@media (min-width: 1050px) {
+    .como-pedir, .avaliacoes {
+        position: relative;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    .como-pedir::before, .avaliacoes::after {
+        content: "";
+        position: absolute;
+        top: 45%;
+        width: 0;
+        height: 0;
+        border: 24px solid transparent;
+    }
+
+    .como-pedir::before {
+        left: 2%;
+        border-left-color: #f5c638;
+    }
+
+    .avaliacoes::after {
+        right: 2%;
+        border-right-color: #f5c638;
     }
 }
