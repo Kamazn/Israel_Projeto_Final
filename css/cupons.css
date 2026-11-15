@@ -1,0 +1,81 @@
+.lista-cupons {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.cupom {
+    flex: 1;
+    min-width: 260px;
+    background-color: #161820;
+    padding: 32px;
+    border-top: 5px solid #f5c638;
+    border-radius: 10px;
+}
+
+.cupom h2 {
+    font-size: 4rem;
+    color: #f5c638;
+}
+
+.cupom h2 span {
+    display: block;
+    color: #f2f2f5;
+    font-size: 1.2rem;
+}
+
+.cupom .botao {
+    width: 100%;
+    margin-top: 16px;
+}
+
+.codigo-cupom {
+    margin: 20px 0 0;
+    padding: 14px;
+    background-color: #161820;
+    color: #f2f2f5;
+    border: 1px dashed #f5c638;
+    text-align: center;
+}
+
+.codigo-cupom strong {
+    display: block;
+    color: #f5c638;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+}
+
+.aviso {
+    margin-top: 35px;
+    padding: 24px;
+    border-left: 3px solid #f5c638;
+}
+
+.aviso h2 {
+    font-size: 1.2rem;
+}
+
+.duvidas {
+    margin: 35px 0 60px;
+    max-width: 780px;
+}
+
+@media (max-width: 768px) {
+    .cupom {
+        min-width: 0;
+        flex: auto;
+        width: 100%;
+    }
+}
+
+.aviso {
+    margin-bottom: 40px;
+}
+
+.cupom h2 {
+    color: #f5c638;
+}
+
+.codigo-cupom strong {
+    color: #f5c638;
+}
