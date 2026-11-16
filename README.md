@@ -32,4 +32,4 @@ Professor, eu comecei a fazer o projeto alguns dias antes, em outra pasta no meu
 
 ![Pasta projeto_teste no Explorador de Arquivos](img/pasta-do-projeto.png)
 
-João Gabriel G.
+João Gabriel Gonçalves
