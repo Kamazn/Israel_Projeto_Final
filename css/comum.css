@@ -141,7 +141,15 @@ nav .atual {
     color: #f5c638;
 }
 
-body:not(.header-total) {
+body:not(.header-total):not(.pagina-contato) {
+    background-image:
+        linear-gradient(#10101040, #10101040),
+        url("../img/fundo-hamburgueres.png");
+    background-size: auto, 1920px 1080px;
+    background-repeat: repeat;
+}
+
+.pagina-contato {
     background-image:
         linear-gradient(#ffffff06 1px, transparent 1px),
         linear-gradient(90deg, #ffffff06 1px, transparent 1px);
