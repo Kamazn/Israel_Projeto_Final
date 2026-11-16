@@ -26,6 +26,12 @@ O site usa HTML, CSS e JavaScript e funciona direto no navegador. O pedido é um
     img/    Logo e fotos dos produtos
     video/  Vídeo da página inicial
 
+## Limitações conhecidas
+
+- O pedido é simulado. Preencher o endereço e confirmar o pedido só exibe uma confirmação na tela.
+- Os dados do pedido e o cupom digitado são perdidos ao recarregar a página.
+- Os cupons servem para demonstrar o cálculo do desconto, e as avaliações são ilustrativas.
+
 ## Sobre os commits
 
 Professor, eu comecei a fazer o projeto alguns dias antes, em outra pasta no meu computador. Faltei à última aula e só soube hoje, quando meus colegas me avisaram, que precisava fazer commits todos os dias. Por isso, o histórico do GitHub começa depois de parte do trabalho que fiz no computador.
