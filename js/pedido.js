@@ -10,21 +10,22 @@ const confirmacao = document.getElementById('confirmacao-pedido');
 const caixa = document.getElementById('pedido-concluido');
 const resumoConfirmacao = document.getElementById('resumo-confirmacao');
 
-const produtoEscolhido = location.hash.replace('#', '');
-const opcao = document.getElementById(produtoEscolhido);
+const linkDoProduto = location.hash;
+const opcoes = formulario.querySelectorAll('option[id]');
 
-if (opcao && opcao.tagName === 'OPTION') {
-    opcao.selected = true;
+for (const opcao of opcoes) {
+    if (linkDoProduto === '#' + opcao.id) {
+        opcao.selected = true;
+    }
 }
 
-if (produtoEscolhido === 'milkshake-16') {
+if (linkDoProduto === '#milkshake-16') {
     campoLanche.value = '0';
 }
 
 function calcularDesconto(subtotal) {
     const codigo = campoCupom.value.trim().toUpperCase();
     let porcentagem = 0;
-    let minimo = 0;
     mensagemCupom.textContent = '';
 
     if (codigo === '') {
@@ -33,20 +34,12 @@ function calcularDesconto(subtotal) {
 
     if (codigo === 'UNIPE10') {
         porcentagem = 10;
-        minimo = 30;
     } else if (codigo === 'UNIPE20') {
         porcentagem = 20;
-        minimo = 100;
     } else if (codigo === 'UNIPE30') {
         porcentagem = 30;
-        minimo = 200;
     } else {
         mensagemCupom.textContent = 'Cupom inválido.';
-        return 0;
-    }
-
-    if (subtotal <= minimo) {
-        mensagemCupom.textContent = 'O pedido deve passar de R$ ' + minimo + ',00.';
         return 0;
     }
 
