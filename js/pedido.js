@@ -173,7 +173,7 @@ if (lista) {
 
         atualizarResumo(itens);
         const total = document.getElementById('total').textContent;
-        document.getElementById('resumo-confirmacao').textContent = 'Pedido simulado. Total: ' + total + '.';
+        document.getElementById('resumo-confirmacao').textContent = 'Seu pedido foi feito! O total ficou em ' + total + '.';
         document.getElementById('pedido-concluido').showModal();
         entrega.reset();
         campoCupom.value = '';
