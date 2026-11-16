@@ -20,95 +20,99 @@
                 <a href="index.html">Início</a>
                 <a href="cardapio.html">Cardápio</a>
                 <a href="cupons.html">Cupons</a>
-                <a href="carrinho.html" class="atual">Meu pedido</a>
+                <a href="carrinho.html" class="atual">Carrinho</a>
+                <a href="sobrenos.html">Sobre nós</a>
+                <a href="contato.html">Contato</a>
             </nav>
         </header>
 
         <main>
             <section class="titulo-pagina">
-                <h1>Monte seu pedido</h1>
-                <p>Pela seu lanche e finalize sua compra.</p>
+                <h1>Meu Carrinho</h1>
+                <p>Confira os itens que você adicionou no cardápio.</p>
             </section>
             <div class="area-pedido">
-                <form id="formulario-pedido" class="formulario">
-                    <h2>O que vai ser hoje?</h2>
-                    <label for="hamburguer">Hambúrguer ou combo</label>
-                    <select id="hamburguer" name="hamburguer">
-                        <option value="0">Sem hambúrguer ou combo</option>
-                        <option id="hamburguer-22" value="22" selected>Clássico — R$ 22,00</option>
-                        <option id="hamburguer-26" value="26">Cheddar — R$ 26,00</option>
-                        <option id="hamburguer-36" value="36">Combo Bacon — R$ 36,00</option>
-                        <option id="hamburguer-39" value="39">Combo Duplo — R$ 39,00</option>
-                        <option id="hamburguer-34" value="34">Combo Frango — R$ 34,00</option>
-                    </select>
-                    <label for="quantidade">Quantidade de lanches</label>
-                    <select id="quantidade" name="quantidade">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                    </select>
-                    <label for="milkshake">Milk-shake</label>
-                    <select id="milkshake" name="milkshake">
-                        <option value="0">Sem milk-shake</option>
-                        <option id="milkshake-16" value="16">Milk-shake de chocolate — R$ 16,00</option>
-                    </select>
-                    <label for="nome">Seu nome</label>
-                    <input type="text" id="nome" name="nome" placeholder="Como podemos chamar você?" required>
-                    <fieldset>
-                        <legend>Endereço de entrega</legend>
-                        <label for="rua">Rua</label>
-                        <input type="text" id="rua" name="rua" placeholder="Nome da rua" required>
-                        <label for="numero">Número</label>
-                        <input type="text" id="numero" name="numero" placeholder="Ex.: 120 ou s/n" required>
-                        <label for="bairro">Bairro</label>
-                        <input type="text" id="bairro" name="bairro" placeholder="Nome do bairro" required>
-                        <label for="complemento">Complemento (opcional)</label>
-                        <input type="text" id="complemento" name="complemento" placeholder="Ex.: apartamento 202">
-                    </fieldset>
-                    <label for="cupom">Código do cupom</label>
-                    <input type="text" id="cupom" name="cupom" placeholder="Ex.: UNIPE10">
-                    <p><a href="cupons.html">Ver cupons disponíveis</a></p>
-                    <label for="observacao">Observações</label>
-                    <textarea id="observacao" name="observacao" rows="3" placeholder="Ex.: sem cebola"></textarea>
-                    <button class="botao" type="submit">Finalizar pedido</button>
-                    <p id="confirmacao-pedido" role="status"></p>
-                </form>
-                <aside class="resumo">
-                    <h2>Seu pedido</h2>
-                    <p>O total muda conforme suas escolhas.</p>
-                    <p class="total">R$ <strong id="total">22,00</strong></p>
-                    <p id="mensagem-pedido" role="status"></p>
+                <section class="formulario">
+                    <h2>Itens do carrinho</h2>
+                    <p id="carrinho-vazio">Seu carrinho está vazio.</p>
+                    <ul id="itens-carrinho"></ul>
+                    <template id="modelo-produto">
+                        <li class="item-carrinho">
+                            <img class="foto-carrinho" alt="">
+                            <div class="dados-carrinho">
+                                <h3></h3>
+                                <p></p>
+                                <div class="controles-carrinho">
+                                    <button type="button" data-acao="diminuir" aria-label="Diminuir">−</button>
+                                    <span></span>
+                                    <button type="button" data-acao="aumentar" aria-label="Aumentar">+</button>
+                                    <button type="button" data-acao="remover" aria-label="Remover">Remover</button>
+                                </div>
+                            </div>
+                        </li>
+                    </template>
+                    <form id="formulario-entrega" class="formulario-entrega">
+                        <h2>Endereço de entrega</h2>
+                        <label class="campo-largo" for="nome-entrega">
+                            Nome do destinatário
+                            <input type="text" id="nome-entrega" autocomplete="name" required>
+                        </label>
+                        <label for="rua">
+                            Rua
+                            <input type="text" id="rua" autocomplete="address-line1" required>
+                        </label>
+                        <label for="numero">
+                            Número
+                            <input type="text" id="numero" placeholder="120 ou s/n" required>
+                        </label>
+                        <label for="bairro">
+                            Bairro
+                            <input type="text" id="bairro" required>
+                        </label>
+                        <label for="complemento">
+                            Complemento (opcional)
+                            <input type="text" id="complemento" autocomplete="address-line2">
+                        </label>
+                    </form>
                     <a class="voltar-cardapio" href="cardapio.html">Voltar ao cardápio</a>
-                </aside>
+                </section>
+                <section class="resumo">
+                    <h2>Resumo do pedido</h2>
+                    <label for="cupom">Código do cupom</label>
+                    <input type="text" id="cupom" placeholder="Ex.: UNIPE10">
+                    <p id="mensagem-pedido" role="status"></p>
+                    <p><a href="cupons.html">Ver cupons disponíveis</a></p>
+                    <p>Subtotal: <strong id="subtotal">R$ 0,00</strong></p>
+                    <p>Desconto: <strong id="desconto">R$ 0,00</strong></p>
+                    <p>Total: <strong id="total">R$ 0,00</strong></p>
+                    <button class="botao" type="submit" form="formulario-entrega" id="finalizar-pedido" disabled>Finalizar pedido</button>
+                </section>
             </div>
         </main>
         <footer class="rodape">
-            <a class="logo" href="index.html">
-                <img src="../img/logo.png" alt="" width="52" height="52">
-                UnipeBurguer
-            </a>
+            <div class="marca-rodape">
+                <a class="logo" href="index.html">
+                    <img src="../img/logo.png" alt="" width="52" height="52">
+                    UnipeBurguer
+                </a>
+                <small>
+                    <strong>Projeto feito com HTML, CSS e JavaScript</strong><br>
+                    Feito por João Gabriel Gonçalves - © 2026
+                </small>
+            </div>
             <nav class="mapa-site" aria-label="Todas as páginas">
                 <a href="index.html">Início</a>
                 <a href="cardapio.html">Cardápio</a>
                 <a href="cupons.html">Cupons</a>
                 <a href="carrinho.html">Meu pedido</a>
+                <a href="sobrenos.html">Sobre nós</a>
+                <a href="contato.html">Contato</a>
             </nav>
-            <small>
-                <strong>Projeto feito com HTML, CSS e JavaScript</strong><br>
-                Feito por João Gabriel G. - © 2026
-            </small>
         </footer>
-        <dialog id="pedido-concluido" aria-labelledby="titulo-confirmacao">
-            <h2 id="titulo-confirmacao">Pedido concluído</h2>
+        <dialog class="janela-confirmacao" id="pedido-concluido">
+            <h2>Pedido concluído</h2>
             <p id="resumo-confirmacao"></p>
-            <a class="botao" href="index.html">OK</a>
+            <a class="botao" href="index.html">Continuar</a>
         </dialog>
 
         <script src="../js/pedido.js"></script>

@@ -10,7 +10,7 @@
         <link rel="icon" href="../img/icone.png">
     </head>
 
-    <body>
+    <body class="pagina-cupons">
         <header class="header">
             <a class="logo" href="index.html">
                 <img src="../img/logo.png" alt="UnipeBurguer" width="52" height="52">
@@ -20,48 +20,67 @@
                 <a href="index.html">Início</a>
                 <a href="cardapio.html">Cardápio</a>
                 <a href="cupons.html" class="atual">Cupons</a>
-                <a href="carrinho.html">Meu pedido</a>
+                <a href="carrinho.html">Carrinho</a>
+                <a href="sobrenos.html">Sobre nós</a>
+                <a href="contato.html">Contato</a>
             </nav>
         </header>
 
         <main>
             <section class="titulo-pagina">
                 <h1>Cupons</h1>
-                <p>Abra um cupom e digite o código em Meu pedido.</p>
+                <p>Copie um código e use no carrinho.</p>
             </section>
 
             <section class="lista-cupons">
-                <details class="cupom">
-                    <summary>10% de desconto</summary>
-                    <p>Código: <strong>UNIPE10</strong></p>
-                </details>
-                <details class="cupom">
-                    <summary>20% de desconto</summary>
-                    <p>Código: <strong>UNIPE20</strong></p>
-                </details>
-                <details class="cupom">
-                    <summary>30% de desconto</summary>
-                    <p>Código: <strong>UNIPE30</strong></p>
-                </details>
+                <article class="cupom">
+                    <h2><strong class="percentual">10%</strong> de desconto</h2>
+                    <div class="codigo-cupom">
+                        <input type="text" value="UNIPE10" aria-label="Código do cupom de 10%" readonly>
+                        <button class="botao copiar-cupom" type="button">Copiar</button>
+                    </div>
+                    <p class="retorno-cupom" role="status"></p>
+                </article>
+                <article class="cupom">
+                    <h2><strong class="percentual">20%</strong> de desconto</h2>
+                    <div class="codigo-cupom">
+                        <input type="text" value="UNIPE20" aria-label="Código do cupom de 20%" readonly>
+                        <button class="botao copiar-cupom" type="button">Copiar</button>
+                    </div>
+                    <p class="retorno-cupom" role="status"></p>
+                </article>
+                <article class="cupom">
+                    <h2><strong class="percentual">30%</strong> de desconto</h2>
+                    <div class="codigo-cupom">
+                        <input type="text" value="UNIPE30" aria-label="Código do cupom de 30%" readonly>
+                        <button class="botao copiar-cupom" type="button">Copiar</button>
+                    </div>
+                    <p class="retorno-cupom" role="status"></p>
+                </article>
             </section>
 
-            <p><a class="botao" href="carrinho.html">Ir para meu pedido</a></p>
+            <p><a class="botao" href="carrinho.html">Ir para o carrinho</a></p>
         </main>
         <footer class="rodape">
-            <a class="logo" href="index.html">
-                <img src="../img/logo.png" alt="" width="52" height="52">
-                UnipeBurguer
-            </a>
+            <div class="marca-rodape">
+                <a class="logo" href="index.html">
+                    <img src="../img/logo.png" alt="" width="52" height="52">
+                    UnipeBurguer
+                </a>
+                <small>
+                    <strong>Projeto feito com HTML, CSS e JavaScript</strong><br>
+                    Feito por João Gabriel Gonçalves - © 2026
+                </small>
+            </div>
             <nav class="mapa-site" aria-label="Todas as páginas">
                 <a href="index.html">Início</a>
                 <a href="cardapio.html">Cardápio</a>
                 <a href="cupons.html">Cupons</a>
                 <a href="carrinho.html">Meu pedido</a>
+                <a href="sobrenos.html">Sobre nós</a>
+                <a href="contato.html">Contato</a>
             </nav>
-            <small>
-                <strong>Projeto feito com HTML, CSS e JavaScript</strong><br>
-                Feito por João Gabriel G. - © 2026
-            </small>
         </footer>
+        <script src="../js/cupons.js"></script>
     </body>
 </html>

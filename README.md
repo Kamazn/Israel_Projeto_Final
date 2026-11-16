@@ -32,6 +32,13 @@ O site usa HTML, CSS e JavaScript e funciona direto no navegador. O pedido é um
 - Os dados do pedido e o cupom digitado são perdidos ao recarregar a página.
 - Os cupons servem para demonstrar o cálculo do desconto, e as avaliações são ilustrativas.
 
+## O que mudou no site
+
+- No [Cardápio](html/cardapio.html), o botão **Adicionar ao carrinho** agora adiciona o produto sem sair da página.
+- No [Carrinho](html/carrinho.html), dá para mudar quantidades, remover itens e ver subtotal, desconto e total separados. Os itens ficam salvos no mesmo navegador pelo `localStorage`. O endereço e o cupom digitado continuam temporários.
+- Na página de [Cupons](html/cupons.html), dá para copiar o código e colar no carrinho.
+- Adicionei as páginas [Sobre nós](html/sobrenos.html) e [Contato](html/contato.html), com confirmação de envio simulado.
+
 ## Sobre os commits
 
 Professor, eu comecei a fazer o projeto alguns dias antes, em outra pasta no meu computador. Eu infelizmente faltei à última aula e só soube hoje, quando meus colegas mfe avisaram, que precisava azer commits todos os dias. Por isso, o histórico do GitHub começa depois de parte do trabalho que fiz no computador. Peço desculpas por isso de verdade porque eles me falaram que o senhor tinha avisado bastante, e entendo perfeitamente se o senhor tirar alguns pontos por conta disso

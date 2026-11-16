@@ -1,6 +1,20 @@
+
 .categorias {
-    margin-top: 28px;
-    border-bottom: 1px solid #323644;
+    gap: 8px;
+    margin-top: 24px;
+}
+
+.categorias a {
+    padding: 7px 14px;
+    border: 1px solid #363636;
+    border-radius: 20px;
+    background-color: #191919;
+    color: #f2f2f2;
+}
+
+.categorias a:hover, .categorias a:focus-visible {
+    border-color: #f5c638;
+    color: #f5c638;
 }
 
 .secao-cardapio {
@@ -17,8 +31,8 @@
 
 .produto {
     width: 31%;
-    border: 1px solid #323644;
-    background-color: #161820;
+    border: 1px solid #363636;
+    background-color: #151515;
     border-radius: 10px;
 }
 
@@ -63,6 +77,21 @@
     }
 }
 
+.ingredientes {
+    padding: 16px 20px;
+    border: 1px solid #363636;
+    border-radius: 10px;
+    background-color: #151515;
+}
+
+.ingredientes summary {
+    font-weight: bold;
+}
+
+.ingredientes[open] summary {
+    margin-bottom: 12px;
+}
+
 .tabela-rolagem {
     overflow-x: auto;
 }
@@ -73,13 +102,13 @@ table {
 }
 
 th, td {
-    border: 1px solid #454958;
+    border: 1px solid #545454;
     padding: 12px;
     text-align: left;
 }
 
 th {
-    background-color: #161820;
+    background-color: #202020;
 }
 
 caption {
@@ -104,4 +133,35 @@ caption {
 #milkshake .produto img {
     object-fit: contain;
     background-color: #ffffff;
+}
+
+.produto-preco button {
+    padding: 6px 10px;
+    border: 1px solid #f5c638;
+    border-radius: 6px;
+    color: #f5c638;
+    background-color: transparent;
+    transition: transform 0.2s ease, background-color 0.2s ease-in-out;
+}
+
+.produto-preco button:hover, .produto-preco button:focus-visible {
+    background-color: #f5c638;
+    color: #171717;
+    transform: scale(1.05);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .produto-preco button {
+        transition: none;
+    }
+
+    .produto-preco button:hover, .produto-preco button:focus-visible {
+        transform: none;
+    }
+}
+
+.produto small {
+    display: block;
+    margin: 0 24px 12px;
+    color: #f5c638;
 }

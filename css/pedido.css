@@ -7,7 +7,7 @@
 
 .formulario {
     flex: 2;
-    background-color: #161820;
+    background-color: #151515;
     padding: 32px;
     border-radius: 10px;
 }
@@ -21,10 +21,10 @@
     display: block;
     width: 100%;
     padding: 12px;
-    border: 1px solid #454958;
+    border: 1px solid #545454;
     border-radius: 4px;
-    background-color: #161820;
-    color: #f2f2f5;
+    background-color: #151515;
+    color: #f2f2f2;
 }
 
 .formulario .botao {
@@ -34,13 +34,8 @@
 .resumo {
     flex: 1;
     padding: 28px;
-    border: 1px solid #323644;
+    border: 1px solid #363636;
     border-radius: 10px;
-}
-
-.total {
-    font-size: 2.5rem;
-    color: #f5c638;
 }
 
 #mensagem-pedido {
@@ -68,24 +63,12 @@
     }
 }
 
-fieldset {
-    border: 1px solid #454958;
-    border-radius: 8px;
-    margin: 24px 0;
-    padding: 20px;
-    min-width: 0;
-}
-
-.total, #mensagem-pedido {
-    color: #f5c638;
-}
-
 .formulario, .resumo {
-    background-color: #161820;
+    background-color: #151515;
 }
 
 .formulario input, .formulario select, .formulario textarea {
-    background-color: #161820;
+    background-color: #151515;
     max-width: 100%;
     min-width: 0;
 }
@@ -95,14 +78,8 @@ fieldset {
     max-width: 100%;
 }
 
-.formulario fieldset {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-}
 
-
-#pedido-concluido {
+.janela-confirmacao {
     width: 90%;
     max-width: 420px;
     margin: auto;
@@ -114,6 +91,175 @@ fieldset {
     text-align: center;
 }
 
-#pedido-concluido::backdrop {
+.janela-confirmacao::backdrop {
     background-color: #00000099;
+}
+
+
+#itens-carrinho {
+    list-style: none;
+    padding: 0;
+}
+
+.item-carrinho {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 14px;
+    padding: 14px;
+    border: 1px solid #393939;
+    border-radius: 10px;
+    background-color: #101010;
+}
+
+.foto-carrinho {
+    width: 104px;
+    height: 104px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.dados-carrinho {
+    min-width: 0;
+}
+
+.dados-carrinho h3 {
+    margin-bottom: 4px;
+}
+
+.dados-carrinho p {
+    margin-bottom: 8px;
+    color: #f5c638;
+    font-weight: bold;
+}
+
+.controles-carrinho {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.controles-carrinho button {
+    min-width: 36px;
+    min-height: 36px;
+    padding: 4px 8px;
+    border: 1px solid #545454;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #f2f2f2;
+}
+
+.controles-carrinho button:hover {
+    border-color: #f5c638;
+    color: #f5c638;
+}
+
+@media (max-width: 480px) {
+    .item-carrinho {
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .foto-carrinho {
+        width: 64px;
+        height: 64px;
+    }
+}
+
+#subtotal {
+    color: #ffffff;
+}
+
+#desconto {
+    color: #f53838;
+    text-decoration: line-through;
+}
+
+#total {
+    color: #22c55e;
+}
+
+.resumo input {
+    width: 100%;
+    margin: 6px 0 12px;
+    padding: 10px 12px;
+    border: 1px solid #545454;
+    border-radius: 4px;
+    background-color: #101010;
+    color: #f2f2f2;
+}
+
+.resumo input::placeholder {
+    color: #a8a8a8;
+}
+
+.titulo-contato {
+    text-align: center;
+}
+
+.area-contato {
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+.area-contato {
+    border: 1px solid #363636;
+}
+
+.area-contato input, .area-contato textarea {
+    background-color: #101010;
+}
+
+.area-contato input:focus, .area-contato textarea:focus {
+    border-color: #f5c638;
+    outline: 1px solid #f5c638;
+}
+
+.area-contato label:first-child {
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    .area-pedido {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+.formulario-entrega {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px 14px;
+    margin-top: 22px;
+    padding-top: 18px;
+    border-top: 1px solid #363636;
+}
+
+.formulario-entrega h2, .campo-largo {
+    grid-column: 1 / -1;
+}
+
+.formulario-entrega h2 {
+    margin-bottom: 0;
+    font-size: 1.25rem;
+}
+
+.formulario-entrega label {
+    min-width: 0;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.formulario-entrega input {
+    margin-top: 4px;
+    padding: 7px 10px;
+    background-color: #101010;
+}
+
+@media (max-width: 480px) {
+    .formulario-entrega {
+        grid-template-columns: 1fr;
+    }
 }

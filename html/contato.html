@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="João Gabriel">
+        <title>Contato</title>
+        <link rel="stylesheet" href="../css/comum.css">
+        <link rel="stylesheet" href="../css/pedido.css">
+        <link rel="icon" href="../img/icone.png">
+    </head>
+
+    <body>
+        <header class="header">
+            <a class="logo" href="index.html">
+                <img src="../img/logo.png" alt="UnipeBurguer" width="52" height="52">
+                UnipeBurguer
+            </a>
+            <nav class="Menu">
+                <a href="index.html">Início</a>
+                <a href="cardapio.html">Cardápio</a>
+                <a href="cupons.html">Cupons</a>
+                <a href="carrinho.html">Carrinho</a>
+                <a href="sobrenos.html">Sobre nós</a>
+                <a href="contato.html" class="atual">Contato</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="titulo-pagina titulo-contato">
+                <h1>Entre em contato</h1>
+                <p>Tem uma dúvida ou sugestão? Escreva sua mensagem abaixo.</p>
+            </section>
+            <form class="formulario area-contato" id="formulario-contato">
+                <label for="nome">Seu nome</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+                <label for="telefone">Telefone (opcional)</label>
+                <input type="tel" id="telefone" name="telefone" autocomplete="tel" placeholder="(83) 99999-9999">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                <button class="botao" type="submit">Enviar mensagem</button>
+            </form>
+        </main>
+        <footer class="rodape">
+            <div class="marca-rodape">
+                <a class="logo" href="index.html">
+                    <img src="../img/logo.png" alt="" width="52" height="52">
+                    UnipeBurguer
+                </a>
+                <small>
+                    <strong>Projeto feito com HTML, CSS e JavaScript</strong><br>
+                    Feito por João Gabriel Gonçalves - © 2026
+                </small>
+            </div>
+            <nav class="mapa-site" aria-label="Todas as páginas">
+                <a href="index.html">Início</a>
+                <a href="cardapio.html">Cardápio</a>
+                <a href="cupons.html">Cupons</a>
+                <a href="carrinho.html">Meu pedido</a>
+                <a href="sobrenos.html">Sobre nós</a>
+                <a href="contato.html" class="atual">Contato</a>
+            </nav>
+        </footer>
+        <dialog class="janela-confirmacao" id="mensagem-enviada">
+            <h2>Mensagem enviada</h2>
+            <p>Obrigado pelo contato!</p>
+            <a class="botao" href="index.html">Continuar</a>
+        </dialog>
+
+        <script src="../js/contato.js"></script>
+    </body>
+</html>

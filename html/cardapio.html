@@ -20,7 +20,9 @@
                 <a href="index.html">Início</a>
                 <a href="cardapio.html" class="atual">Cardápio</a>
                 <a href="cupons.html">Cupons</a>
-                <a href="carrinho.html">Meu pedido</a>
+                <a href="carrinho.html">Carrinho</a>
+                <a href="sobrenos.html">Sobre nós</a>
+                <a href="contato.html">Contato</a>
             </nav>
         </header>
 
@@ -37,82 +39,88 @@
             <section class="secao-cardapio" id="hamburgueres">
                 <h2>Hamburgueres</h2>
                 <article class="produto">
-                    <a class="foto-produto" href="carrinho.html#hamburguer-22">
+                    <figure class="foto-produto">
                         <img src="../img/hamburguer1.png" alt="Classico">
-                    </a>
+                    </figure>
                     <h3>Classico</h3>
                     <p>Pão com gergelim, carne, queijo, alface e tomate.</p>
                     <p class="produto-preco">
                         <strong>R$ 22,00</strong>
-                        <a href="carrinho.html#hamburguer-22">Escolher</a>
+                        <button class="adicionar-produto" type="button" data-codigo="hamburguer-22" data-preco="22">Adicionar ao carrinho</button>
                     </p>
+                    <small role="status"></small>
                 </article>
                 <article class="produto">
-                    <a class="foto-produto" href="carrinho.html#hamburguer-26">
+                    <figure class="foto-produto">
                         <img src="../img/hamburguer2.png" alt="Cheddar">
-                    </a>
+                    </figure>
                     <h3>Cheddar</h3>
                     <p>Pão, carne, cheddar, alface, tomate e cebola roxa.</p>
                     <p class="produto-preco">
                         <strong>R$ 26,00</strong>
-                        <a href="carrinho.html#hamburguer-26">Escolher</a>
+                        <button class="adicionar-produto" type="button" data-codigo="hamburguer-26" data-preco="26">Adicionar ao carrinho</button>
                     </p>
+                    <small role="status"></small>
                 </article>
             </section>
 
             <section class="secao-cardapio" id="combos">
                 <h2>Combos</h2>
                 <article class="produto">
-                    <a class="foto-produto" href="carrinho.html#hamburguer-36">
+                    <figure class="foto-produto">
                         <img src="../img/combo1.png" alt="Combo Bacon">
-                    </a>
+                    </figure>
                     <h3>Combo Bacon</h3>
                     <p>Hambúrguer de carne com bacon, queijo, alface e tomate. Acompanha batata frita e refrigerante.</p>
                     <p class="produto-preco">
                         <strong>R$ 36,00</strong>
-                        <a href="carrinho.html#hamburguer-36">Escolher</a>
+                        <button class="adicionar-produto" type="button" data-codigo="hamburguer-36" data-preco="36">Adicionar ao carrinho</button>
                     </p>
+                    <small role="status"></small>
                 </article>
                 <article class="produto">
-                    <a class="foto-produto" href="carrinho.html#hamburguer-39">
+                    <figure class="foto-produto">
                         <img src="../img/combo2.png" alt="Combo Duplo">
-                    </a>
+                    </figure>
                     <h3>Combo Duplo</h3>
                     <p>Hambúrguer com duas carnes, queijo e bacon. Acompanha batata frita e refrigerante.</p>
                     <p class="produto-preco">
                         <strong>R$ 39,00</strong>
-                        <a href="carrinho.html#hamburguer-39">Escolher</a>
+                        <button class="adicionar-produto" type="button" data-codigo="hamburguer-39" data-preco="39">Adicionar ao carrinho</button>
                     </p>
+                    <small role="status"></small>
                 </article>
                 <article class="produto">
-                    <a class="foto-produto" href="carrinho.html#hamburguer-34">
+                    <figure class="foto-produto">
                         <img src="../img/combo3.png" alt="Combo Frango">
-                    </a>
+                    </figure>
                     <h3>Combo Frango</h3>
                     <p>Hambúrguer de frango crocante, alface e tomate. Acompanha batata frita e refrigerante.</p>
                     <p class="produto-preco">
                         <strong>R$ 34,00</strong>
-                        <a href="carrinho.html#hamburguer-34">Escolher</a>
+                        <button class="adicionar-produto" type="button" data-codigo="hamburguer-34" data-preco="34">Adicionar ao carrinho</button>
                     </p>
+                    <small role="status"></small>
                 </article>
             </section>
 
             <section class="secao-cardapio" id="milkshake">
                 <h2>Milkshake</h2>
                 <article class="produto">
-                    <a class="foto-produto" href="carrinho.html#milkshake-16">
+                    <figure class="foto-produto">
                         <img src="../img/milkshake.png" alt="Milkshake">
-                    </a>
+                    </figure>
                     <h3>Milkshake de chocolate</h3>
                     <p>Sorvete de chocolate, chantili e calda de chocolate. Copo de 400 ml.</p>
                     <p class="produto-preco">
                         <strong>R$ 16,00</strong>
-                        <a href="carrinho.html#milkshake-16">Escolher</a>
+                        <button class="adicionar-produto" type="button" data-codigo="milkshake-16" data-preco="16">Adicionar ao carrinho</button>
                     </p>
+                    <small role="status"></small>
                 </article>
             </section>
 
-            <details>
+            <details class="ingredientes">
                 <summary>Ingredientes dos lanches</summary>
                 <div class="tabela-rolagem">
                     <table>
@@ -151,7 +159,7 @@
                                 <td>Batata frita e refrigerante</td>
                             </tr>
                             <tr>
-                                <td>Milk-shake de chocolate</td>
+                                <td>Milkshake de chocolate</td>
                                 <td>Sorvete de chocolate</td>
                                 <td>Chantili e calda</td>
                             </tr>
@@ -161,20 +169,25 @@
             </details>
         </main>
         <footer class="rodape">
-            <a class="logo" href="index.html">
-                <img src="../img/logo.png" alt="" width="52" height="52">
-                UnipeBurguer
-            </a>
+            <div class="marca-rodape">
+                <a class="logo" href="index.html">
+                    <img src="../img/logo.png" alt="" width="52" height="52">
+                    UnipeBurguer
+                </a>
+                <small>
+                    <strong>Projeto feito com HTML, CSS e JavaScript</strong><br>
+                    Feito por João Gabriel Gonçalves - © 2026
+                </small>
+            </div>
             <nav class="mapa-site" aria-label="Todas as páginas">
                 <a href="index.html">Início</a>
                 <a href="cardapio.html">Cardápio</a>
                 <a href="cupons.html">Cupons</a>
                 <a href="carrinho.html">Meu pedido</a>
+                <a href="sobrenos.html">Sobre nós</a>
+                <a href="contato.html">Contato</a>
             </nav>
-            <small>
-                <strong>Projeto feito com HTML, CSS e JavaScript</strong><br>
-                Feito por João Gabriel G. - © 2026
-            </small>
         </footer>
+        <script src="../js/pedido.js"></script>
     </body>
 </html>
