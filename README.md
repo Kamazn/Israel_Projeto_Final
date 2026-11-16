@@ -34,8 +34,8 @@ O site usa HTML, CSS e JavaScript e funciona direto no navegador. O pedido é um
 
 ## Sobre os commits
 
-Professor, eu comecei a fazer o projeto alguns dias antes, em outra pasta no meu computador. Faltei à última aula e só soube hoje, quando meus colegas me avisaram, que precisava fazer commits todos os dias. Por isso, o histórico do GitHub começa depois de parte do trabalho que fiz no computador.
+Professor, eu comecei a fazer o projeto alguns dias antes, em outra pasta no meu computador. Eu infelizmente faltei à última aula e só soube hoje, quando meus colegas mfe avisaram, que precisava azer commits todos os dias. Por isso, o histórico do GitHub começa depois de parte do trabalho que fiz no computador. Peço desculpas por isso de verdade porque eles me falaram que o senhor tinha avisado bastante, e entendo perfeitamente se o senhor tirar alguns pontos por conta disso
 
 ![Pasta projeto_teste no Explorador de Arquivos](img/pasta-do-projeto.png)
 
-João Gabriel Gonçalves
+João Gabriel Gonçalves Batista - 2026
