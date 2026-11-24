@@ -2,6 +2,11 @@
   publish = "."
 
 [[redirects]]
-  from = "/"
-  to = "/html/"
+  from = "/html/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/html/index.html"
+  to = "/"
   status = 301

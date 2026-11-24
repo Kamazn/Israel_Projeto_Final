@@ -206,6 +206,15 @@ details p {
     color: #f2f2f2;
 }
 
+.link-github {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    vertical-align: middle;
+}
+
 .mapa-site {
     justify-content: flex-end;
     gap: 4px 20px;

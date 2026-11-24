@@ -13,14 +13,15 @@ Projeto da disciplina de Desenvolvimento Front-End para Web. Fiz um site de hamb
 ## Como executar
 
 1. Baixe e extraia a pasta do projeto.
-2. Abra [html/index.html](html/index.html) no navegador.
+2. Na pasta do projeto, execute `python -m http.server 8000` e abra `http://localhost:8000/` no navegador.
 3. Entre no cardápio, escolha um produto e preencha o formulário em **Meu pedido**.
 
-O site usa HTML, CSS e JavaScript e funciona direto no navegador. O pedido é uma simulação.
+O site usa HTML, CSS e JavaScript, sem precisar de um processo de build. O pedido é uma simulação.
 
 ## Estrutura
 
-    html/   Páginas do site
+    index.html  Página inicial
+    html/   Demais páginas do site
     css/    Estilos das páginas
     js/     JavaScript do pedido e das avaliações
     img/    Logo e fotos dos produtos

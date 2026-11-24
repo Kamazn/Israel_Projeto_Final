@@ -69,6 +69,10 @@
     color: #ffffff;
 }
 
+.titulo .cupom:hover, .titulo .cupom:focus-visible {
+    color: #f5c638;
+}
+
 .hamburguer-destaque {
     max-width: 470px;
     margin: 0 auto;
