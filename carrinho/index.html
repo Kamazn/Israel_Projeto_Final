@@ -12,17 +12,17 @@
 
     <body>
         <header class="header">
-            <a class="logo" href="index.html">
+            <a class="logo" href="/">
                 <img src="../img/logo.png" alt="UnipeBurguer" width="52" height="52">
                 UnipeBurguer
             </a>
             <nav class="Menu">
-                <a href="index.html">Início</a>
-                <a href="cardapio.html">Cardápio</a>
-                <a href="cupons.html">Cupons</a>
-                <a href="carrinho.html" class="atual">Carrinho</a>
-                <a href="sobrenos.html">Sobre nós</a>
-                <a href="contato.html">Contato</a>
+                <a href="/">Início</a>
+                <a href="/cardapio/">Cardápio</a>
+                <a href="/cupons/">Cupons</a>
+                <a href="/carrinho/" class="atual">Carrinho</a>
+                <a href="/sobrenos/">Sobre nós</a>
+                <a href="/contato/">Contato</a>
             </nav>
         </header>
 
@@ -74,14 +74,14 @@
                             <input type="text" id="complemento" autocomplete="address-line2">
                         </label>
                     </form>
-                    <a class="voltar-cardapio" href="cardapio.html">Voltar ao cardápio</a>
+                    <a class="voltar-cardapio" href="/cardapio/">Voltar ao cardápio</a>
                 </section>
                 <section class="resumo">
                     <h2>Resumo do pedido</h2>
                     <label for="cupom">Código do cupom</label>
                     <input type="text" id="cupom" placeholder="Ex: UNIPE10">
                     <p id="mensagem-pedido" role="status"></p>
-                    <p><a href="cupons.html">Ver cupons disponíveis</a></p>
+                    <p><a href="/cupons/">Ver cupons disponíveis</a></p>
                     <p>Subtotal: <strong id="subtotal">R$ 0,00</strong></p>
                     <p>Desconto: <strong id="desconto">R$ 0,00</strong></p>
                     <p>Total: <strong id="total">R$ 0,00</strong></p>
@@ -91,28 +91,33 @@
         </main>
         <footer class="rodape">
             <div class="marca-rodape">
-                <a class="logo" href="index.html">
-                    <img src="../img/logo.png" alt="" width="52" height="52">
-                    UnipeBurguer
-                </a>
+                <div class="marca-rodape-topo">
+                    <a class="logo" href="/">
+                        <img src="../img/logo.png" alt="" width="52" height="52">
+                        UnipeBurguer
+                    </a>
+                    <a class="link-github" href="https://github.com/Kamazn">
+                        <img src="../img/github.svg" alt="Perfil de Kamazn no GitHub" width="24" height="24">
+                    </a>
+                </div>
                 <small>
                     <strong>Projeto feito com HTML, CSS e JavaScript</strong><br>
                     Feito por João Gabriel Gonçalves - © 2026
                 </small>
             </div>
             <nav class="mapa-site" aria-label="Todas as páginas">
-                <a href="index.html">Início</a>
-                <a href="cardapio.html">Cardápio</a>
-                <a href="cupons.html">Cupons</a>
-                <a href="carrinho.html">Carrinho</a>
-                <a href="sobrenos.html">Sobre nós</a>
-                <a href="contato.html">Contato</a>
+                <a href="/">Início</a>
+                <a href="/cardapio/">Cardápio</a>
+                <a href="/cupons/">Cupons</a>
+                <a href="/carrinho/">Carrinho</a>
+                <a href="/sobrenos/">Sobre nós</a>
+                <a href="/contato/">Contato</a>
             </nav>
         </footer>
         <dialog class="janela-confirmacao" id="pedido-concluido">
             <h2>Pedido concluído</h2>
             <p id="resumo-confirmacao"></p>
-            <a class="botao" href="index.html">Continuar</a>
+            <a class="botao" href="/">Continuar</a>
         </dialog>
 
         <script src="../js/pedido.js"></script>

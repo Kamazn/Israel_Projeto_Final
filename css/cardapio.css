@@ -19,18 +19,17 @@
 
 .secao-cardapio {
     margin-bottom: 45px;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 24px;
 }
 
 .secao-cardapio h2 {
-    width: 100%;
+    grid-column: 1 / -1;
     margin-bottom: 0;
 }
 
 .produto {
-    width: 31%;
     border: 1px solid #363636;
     background-color: #151515;
     border-radius: 10px;
@@ -69,12 +68,6 @@
 
 .produto-preco a {
     padding: 8px 0;
-}
-
-@media (max-width: 768px) {
-    .produto {
-        width: 100%;
-    }
 }
 
 .ingredientes {
@@ -164,4 +157,32 @@ caption {
     display: block;
     margin: 0 24px 12px;
     color: #f5c638;
+}
+
+@media (max-width: 900px) {
+    .secao-cardapio {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+}
+
+@media (max-width: 560px) {
+    .secao-cardapio {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .categorias a {
+        display: grid;
+        place-items: center;
+        min-height: 44px;
+    }
+
+    .produto-preco button {
+        min-height: 44px;
+        width: 100%;
+    }
+
+    .tabela-rolagem table {
+        min-width: 25rem;
+    }
 }
