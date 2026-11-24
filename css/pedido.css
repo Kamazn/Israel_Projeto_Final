@@ -262,4 +262,20 @@
     .formulario-entrega {
         grid-template-columns: 1fr;
     }
+
+    .formulario, .resumo {
+        padding: 16px;
+    }
+
+    .formulario .botao, .resumo .botao {
+        width: 100%;
+    }
+
+    .controles-carrinho button, .formulario-entrega input {
+        min-height: 44px;
+    }
+
+    .controles-carrinho button {
+        min-width: 44px;
+    }
 }
