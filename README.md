@@ -21,7 +21,7 @@ O site usa HTML, CSS e JavaScript, sem precisar de um processo de build. O pedid
 ## Estrutura
 
     index.html  Página inicial
-    html/   Demais páginas do site
+    cardapio/, carrinho/, cupons/, sobrenos/, contato/  Demais páginas do site
     css/    Estilos das páginas
     js/     JavaScript do pedido e das avaliações
     img/    Logo e fotos dos produtos
@@ -35,10 +35,10 @@ O site usa HTML, CSS e JavaScript, sem precisar de um processo de build. O pedid
 
 ## O que mudou no site
 
-- No [Cardápio](html/cardapio.html), o botão **Adicionar ao carrinho** agora adiciona o produto sem sair da página.
-- No [Carrinho](html/carrinho.html), dá para mudar quantidades, remover itens e ver subtotal, desconto e total separados. Os itens ficam salvos no mesmo navegador pelo `localStorage`. O endereço e o cupom digitado continuam temporários.
-- Na página de [Cupons](html/cupons.html), dá para copiar o código e colar no carrinho.
-- Adicionei as páginas [Sobre nós](html/sobrenos.html) e [Contato](html/contato.html), com confirmação de envio simulado.
+- No [Cardápio](cardapio/index.html), o botão **Adicionar ao carrinho** agora adiciona o produto sem sair da página.
+- No [Carrinho](carrinho/index.html), dá para mudar quantidades, remover itens e ver subtotal, desconto e total separados. Os itens ficam salvos no mesmo navegador pelo `localStorage`. O endereço e o cupom digitado continuam temporários.
+- Na página de [Cupons](cupons/index.html), dá para copiar o código e colar no carrinho.
+- Adicionei as páginas [Sobre nós](sobrenos/index.html) e [Contato](contato/index.html), com confirmação de envio simulado.
 
 ## Sobre os commits
 
