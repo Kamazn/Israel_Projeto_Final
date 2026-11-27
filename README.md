@@ -1,49 +1,48 @@
 # UnipeBurguer
 
-Projeto da disciplina de Desenvolvimento Front-End para Web. Fiz um site de hamburgueria com cardápio, cupons e uma simulação de pedido.
+Projeto final de Desenvolvimento Front-End para Web. O site apresenta uma hamburgueria e permite montar um pedido simulado no navegador.
 
-## Funcionalidades
+## Objetivo e minha contribuição
 
-- Ver os lanches, os combos, o milk-shake e seus ingredientes.
-- Escolher um produto no cardápio e abrir o formulário com ele selecionado.
-- Ver os cupons e digitar um código para calcular o desconto.
-- Preencher o endereço, conferir o total e ver a confirmação do pedido.
-- Ler as avaliações usando os botões de avançar e voltar.
+Organizei as páginas de início, cardápio, cupons, carrinho, sobre nós e contato. Usei HTML e CSS para a estrutura e o visual. Com JavaScript, fiz a adição de produtos ao carrinho, a mudança de quantidades, o cálculo do subtotal e dos descontos, a cópia de cupons e a troca das avaliações.
 
-## Como executar
+## Como testar
 
-1. Baixe e extraia a pasta do projeto.
-2. Na pasta do projeto, execute `python -m http.server 8000` e abra `http://localhost:8000/` no navegador.
-3. Entre no cardápio, escolha um produto e preencha o formulário em **Meu pedido**.
-
-O site usa HTML, CSS e JavaScript, sem precisar de um processo de build. O pedido é uma simulação.
+1. Baixe o repositório e abra index.html no navegador.
+2. Entre no [cardápio](cardapio/index.html) e adicione um produto.
+3. Abra o [carrinho](carrinho/index.html), altere a quantidade e confira o subtotal.
+4. Veja os códigos em [cupons](cupons/index.html), digite um no carrinho e confira o desconto.
+5. Preencha o endereço e finalize para ver a confirmação simulada.
 
 ## Estrutura
 
-    index.html  Página inicial
-    cardapio/, carrinho/, cupons/, sobrenos/, contato/  Demais páginas do site
-    css/    Estilos das páginas
-    js/     JavaScript do pedido e das avaliações
-    img/    Logo e fotos dos produtos
-    video/  Vídeo da página inicial
+| Pasta | Conteúdo |
+| --- | --- |
+| index.html | Página inicial |
+| cardapio/, carrinho/, cupons/, sobrenos/, contato/ | Demais páginas |
+| css/ | Estilos |
+| js/ | Carrinho, cupons, avaliações e contato |
+| img/ e video/ | Imagens e vídeo do site |
+
+## Evidências
+
+- [Cardápio](cardapio/index.html): produtos e botões de adicionar.
+- [Carrinho](carrinho/index.html) e [JavaScript do pedido](js/pedido.js): itens, quantidades, cupom, total e confirmação.
+- [Cupons](cupons/index.html) e [JavaScript dos cupons](js/cupons.js): códigos e botão de copiar.
+- [Página inicial](index.html) e [avaliações](js/avaliacoes.js): apresentação e navegação entre depoimentos.
 
 ## Limitações conhecidas
 
-- O pedido é simulado. Preencher o endereço e confirmar o pedido só exibe uma confirmação na tela.
-- Os dados do pedido e o cupom digitado são perdidos ao recarregar a página.
-- Os cupons servem para demonstrar o cálculo do desconto, e as avaliações são ilustrativas.
+O pedido é uma simulação: não há pagamento, servidor ou envio para a hamburgueria. Os itens do carrinho ficam salvos no navegador com localStorage. O endereço digitado não é salvo.
 
-## O que mudou no site
+## O que melhorei hoje e próximo ajuste
 
-- No [Cardápio](cardapio/index.html), o botão **Adicionar ao carrinho** agora adiciona o produto sem sair da página.
-- No [Carrinho](carrinho/index.html), dá para mudar quantidades, remover itens e ver subtotal, desconto e total separados. Os itens ficam salvos no mesmo navegador pelo `localStorage`. O endereço e o cupom digitado continuam temporários.
-- Na página de [Cupons](cupons/index.html), dá para copiar o código e colar no carrinho.
-- Adicionei as páginas [Sobre nós](sobrenos/index.html) e [Contato](contato/index.html), com confirmação de envio simulado.
+Atualizei o README com o objetivo, minha contribuição, evidências e limitações do projeto. Meu próximo ajuste será praticar JavaScript em um projeto pequeno de lista de tarefas.
 
 ## Sobre os commits
 
-Professor, eu comecei a fazer o projeto alguns dias antes, em outra pasta no meu computador. Eu infelizmente faltei à última aula e só soube hoje, quando meus colegas mfe avisaram, que precisava azer commits todos os dias. Por isso, o histórico do GitHub começa depois de parte do trabalho que fiz no computador. Peço desculpas por isso de verdade porque eles me falaram que o senhor tinha avisado bastante, e entendo perfeitamente se o senhor tirar alguns pontos por conta disso
+Professor, comecei o projeto alguns dias antes em outra pasta no computador. Faltei à última aula e soube depois, pelos meus colegas, que precisava registrar commits todos os dias. Por isso, parte do trabalho local não aparece no início do histórico do GitHub. Entendo que isso pode afetar a avaliação.
 
-![Pasta projeto_teste no Explorador de Arquivos](img/pasta-do-projeto.png)
+![Pasta anterior do projeto no Explorador de Arquivos](img/pasta-do-projeto.png)
 
-João Gabriel Gonçalves Batista - 2026
+João Gabriel Gonçalves - 2026
